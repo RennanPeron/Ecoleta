@@ -1,0 +1,141 @@
+@media (max-width: 900px) {
+    /* Header */
+    div header img {
+        width: 45%;
+    }
+
+    div header a {
+        width: 45%;
+    }
+
+    .content header img {
+        width: 100%;
+    }
+
+    .content header a {
+        width: inherit;
+    }
+
+    /* Page Home */
+    
+    #page-home {
+        background-position-x: 70vw; 
+    }
+
+    #page-home .content {
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        top: 95vh;
+        left: 50%;
+        padding-bottom: 16px;
+        transform: translateX(-50%);
+        display: flex;
+        align-items: center;
+    }
+
+    #page-home header a span {
+        width: 32px;
+        margin-right: 5px;
+    }
+
+    #page-home main {
+        align-items: center;
+    }
+
+    #page-home main h1 {
+        font-size: 46px;
+    }
+
+    #page-home main p {
+        font-size: 18px;
+    }
+
+    /* #page-home main a {
+        margin-bottom: 20vh;
+    } */
+
+    #modal form input {
+        width: 70%;
+    }
+
+    /* Page Search Results */
+
+    #page-search-results .cards{
+        grid-template-columns: 1fr;
+    }
+
+    main .card img {
+        height: 300px;
+    }
+
+    main .card p:last-child {
+        margin-bottom: 32px;
+    }
+
+    /* Page Create Point */
+
+    #page-create-point form {
+        padding: 54px 32px;
+    }
+
+    #page-create-point form h1{
+        font-size: 32px;
+    }
+
+    #page-create-point form h2 {
+        font-size: 20px;
+    }
+
+    #page-create-point form input,
+    #page-create-point form select {
+        width: 100%;
+    }
+
+    form .field-group .field + .field {
+        margin-left: 0;
+    }
+
+    #page-create-point form .field-group {
+        flex-direction: column;
+    }
+
+    #page-create-point form fieldset {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    #page-create-point form .itens-grid {
+        grid-template-columns: 1fr;
+    }
+
+    #page-create-point form button {
+        width: 100%;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 1699px){
+    #page-home {
+        background-position-y: 20vh;
+    }
+
+    /* Page Create Point */
+    #page-create-point form .itens-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #page-create-point form button {
+        width: 260px;
+        float: right;
+    }
+}
+
+@media (min-width: 1700px) {
+    #page-home {
+        background-position-x: 45vw;
+        background-position-y: 35vh;
+    }
+}
